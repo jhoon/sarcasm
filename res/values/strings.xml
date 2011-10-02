@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="sarcasm">Sarcasm</string>
+    <string name="app_name">Sarcasm</string>
+    <string name="about_content">http://applica.pe\ninfo@applica.pe</string>
+</resources>
