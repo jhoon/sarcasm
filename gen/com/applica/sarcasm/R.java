@@ -14,9 +14,7 @@ public final class R {
         public static final int icon=0x7f020000;
         public static final int logo=0x7f020001;
         public static final int sarcasm_off=0x7f020002;
-        public static final int sarcasm_off1=0x7f020003;
-        public static final int sarcasm_on=0x7f020004;
-        public static final int sarcasm_on1=0x7f020005;
+        public static final int sarcasm_on=0x7f020003;
     }
     public static final class id {
         public static final int imageView1=0x7f070000;
@@ -32,9 +30,7 @@ public final class R {
         public static final int global=0x7f060000;
     }
     public static final class raw {
-        public static final int off=0x7f040000;
-        public static final int on=0x7f040001;
-        public static final int sw=0x7f040002;
+        public static final int sw=0x7f040000;
     }
     public static final class string {
         public static final int about_content=0x7f050002;

@@ -14,24 +14,21 @@ import android.content.Intent;
 import android.media.MediaPlayer;
 
 public class SarcasmActivity extends BetterDefaultActivity {
-//	private boolean sarcasmOn = false;
 	private MediaPlayer mMediaPlayer = null; 
 	private ImageView imgSarcasm;
-    /** Called when the activity is first created. */
     @Override
     public void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.main);
-//        ((TextView)findViewById(R.id.txtSarcasm)).setText(((TextView)findViewById(R.id.txtSarcasm)).getText().toString().toUpperCase());
         imgSarcasm = (ImageView)findViewById(R.id.imgSarcasm);
         imgSarcasm.setOnClickListener(new View.OnClickListener() {
 			public void onClick(View v) {
 				if (mMediaPlayer != null) { 
 					mMediaPlayer.stop(); 
 					mMediaPlayer.release(); 
-				} 
+				}
 				mMediaPlayer = MediaPlayer.create(getBaseContext(), R.raw.sw); 
-				mMediaPlayer.start();	
+				mMediaPlayer.start();
 				toggleSarcasm();
 			}
 		});        
@@ -56,7 +53,6 @@ public class SarcasmActivity extends BetterDefaultActivity {
     protected void onResume(){
     	super.onResume();
     	if(isRestoring() || isResuming()){
-//    		toggleSarcasm();
         	Application app = ((Application)getApplication());
         	int drawId = (!app.sarcasmOn)? R.drawable.sarcasm_off: R.drawable.sarcasm_on;
         	imgSarcasm.setImageDrawable(getApplicationContext().getResources().getDrawable(drawId));
